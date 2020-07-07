@@ -1,0 +1,29 @@
+.content{
+    &__formule{
+        text-align: center;
+        &__block{
+            width: 32%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            .parent{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                &__children{
+                    padding: 6px;
+                    &__input{
+                        padding: 7px;
+                        padding-left: 37px;
+                        border-radius: 9px;
+                        border: 1px solid gray;
+                        width: 108%;
+                        font-size: 17px;
+                        font-family: monospace;
+                    }
+                    &__input:hover{border: 2px solid green}
+                }
+            }
+        }
+    }
+}

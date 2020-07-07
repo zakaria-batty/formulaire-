@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 19px;
+  line-height: 30px;
+  min-height: 100%; }
+
+.content__block {
+  text-align: center; }
+  .content__block__form {
+    width: 32%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px auto; }
+    .content__block__form .parent {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .content__block__form .parent__children {
+        padding: 6px; }
