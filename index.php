@@ -52,14 +52,14 @@
                         </div>
 
                         <div class="parent__children">
-                            <select name="Médecin" id="regime" placeholder="Régime" style=" width: 171px; height: 21px;">
+                            <select name="Médecin" id="medcin" placeholder="Médcine" style=" width: 171px; height: 21px;">
                                 <option value="">Médecin consulté</option>
                                 <option value="Généraliste secteur 1">Généraliste secteur 1</option>
                                 <option value="Généraliste secteur 2">Généraliste secteur 2</option>
                                 <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
                                 <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 1">"Psychiatre Neuropsychiatre Neurologue secteur 1</option>
-                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 2">"Psychiatre Neuropsychiatre Neurologue secteur 3</option>
+                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 1">Psychiatre Neuropsychiatre Neurologue secteur 1</option>
+                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 2">Psychiatre Neuropsychiatre Neurologue secteur 3</option>
                             </select>
                         </div>
 

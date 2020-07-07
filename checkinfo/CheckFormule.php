@@ -18,7 +18,7 @@ if (isset($_POST['compare'])) :
     $Nombre_denfants = htmlentities($_POST['Nombre-denfants']);
     $regime = htmlentities($_POST['regime']);
     $tarif_consultation = htmlentities($_POST['tarif-consultation']);
-    $Médecin = htmlentities($_POST['Médecin']);
+    $Médecin = htmlentities($_POST['Médecine']);
     $Ville = htmlentities($_POST['Ville']);
     $Code_postal = htmlentities($_POST['Code-postal']);
     $date_naissance = htmlentities($_POST['date-naissance']);
@@ -61,7 +61,7 @@ if (isset($_POST['compare'])) :
         // if (dmc_insert($connect, $values) === true) :
         //     redirect('voirconge.php?message=envoyez');
         // else :
-            $message = '*Une demande de congé a été refuse';
+            $message = '*Une demande de Devise a été accepter';
         // endif;
     endif;
 endif;
