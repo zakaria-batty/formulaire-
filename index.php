@@ -1,3 +1,6 @@
+<?php
+include("./checkinfo/CheckFormule.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +15,10 @@
     <section class="content">
         <div class="content__formule">
             <h3>Rapide, gratuit et sans engagement !</h3>
-
-            <article class="content__block">
-                <form action="" method="POST">
+            <p class="errors"><?php if (!empty($errors)) : echo $errors;
+                                endif; ?> </p>
+            <article class="block">
+                <form class="block__form" action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
                     <div class="parent">
 
                         <div class="parent__children">
@@ -48,19 +52,19 @@
                         </div>
 
                         <div class="parent__children">
-                            <input class="parent__input" type="number" name="tarif-consultation" placeholder="tarif consultation*" value="<?php echo isset($_POST['tarif-consultation']) ? $_POST['tarif-consultation'] : ''; ?>">
-                        </div>
-
-                        <div class="parent__children">
                             <select name="Médecin" id="regime" placeholder="Régime" style=" width: 171px; height: 21px;">
                                 <option value="">Médecin consulté</option>
                                 <option value="Généraliste secteur 1">Généraliste secteur 1</option>
                                 <option value="Généraliste secteur 2">Généraliste secteur 2</option>
                                 <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
                                 <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 1">"Psychiatre Neuropsychiatre Neurologue secteur 1</option>
-                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 2">"Psychiatre Neuropsychiatre Neurologue secteur 3</option>
+                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 1">Psychiatre Neuropsychiatre Neurologue secteur 1</option>
+                                <option value="Psychiatre Neuropsychiatre Neurologue secteur 2">Psychiatre Neuropsychiatre Neurologue secteur 2</option>
                             </select>
+                        </div>
+
+                        <div class="parent__children">
+                            <input class="parent__input" type="number" name="tarif-consultation" placeholder="tarif consultation*" value="<?php echo isset($_POST['tarif-consultation']) ? $_POST['tarif-consultation'] : ''; ?>">
                         </div>
 
                         <div class="parent__children">
@@ -87,6 +91,11 @@
                     </div>
                 </form>
             </article>
+            <div>
+                <h1>
+                    <?php echo "total reboursement " . compute() . " £" ; ?>
+                </h1>
+            </div>
         </div>
     </section>
 </body>

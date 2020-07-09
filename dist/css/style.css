@@ -8,24 +8,29 @@ body {
 
 .content__formule {
   text-align: center; }
-  .content__formule__block {
-    width: 32%;
+  .content__formule .errors {
+    color: red; }
+  .content__formule .block {
+    width: 51%;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto; }
-    .content__formule__block .parent {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row; }
-      .content__formule__block .parent__children {
-        padding: 6px; }
-        .content__formule__block .parent__children__input {
-          padding: 7px;
-          padding-left: 37px;
-          border-radius: 9px;
-          border: 1px solid gray;
-          width: 108%;
-          font-size: 17px;
-          font-family: monospace; }
-        .content__formule__block .parent__children__input:hover {
-          border: 2px solid green; }
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 3px 7px #e0dede;
+    box-sizing: border-box; }
+    .content__formule .block__form {
+      padding: 49px 132px; }
+      .content__formule .block__form .parent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+        .content__formule .block__form .parent__children {
+          padding: 6px; }
+          .content__formule .block__form .parent__children__input {
+            padding: 4px;
+            padding-left: 14px;
+            border: 1px solid #80808026;
+            border-radius: 8px;
+            width: 77%;
+            font-size: 17px;
+            font-family: monospace; }
