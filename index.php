@@ -1,4 +1,5 @@
 <?php
+include("./function/function.php");
 include("./checkinfo/CheckFormule.php");
 ?>
 <!DOCTYPE html>
@@ -91,13 +92,24 @@ include("./checkinfo/CheckFormule.php");
                     </div>
                 </form>
             </article>
-            <div>
+            <div >
                 <h1>
-                    <?php echo "total reboursement " . compute() . " £" ; ?>
+                    <?php if (!empty($Médecin)) : echo "Montant Remboursé " . compute() . " €";
+                    endif;
+                    ?>
                 </h1>
             </div>
         </div>
     </section>
+    <!-- <article class="affiche">
+        <div class="div">
+            <h1>
+                
+            </h1>
+        </div>
+    </article> -->
+
+    <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
