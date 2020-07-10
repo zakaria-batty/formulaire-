@@ -52,3 +52,31 @@ body {
 
 .section {
   display: none; }
+form {
+  background-color: burlywood;
+}
+input{
+  width: 100%;
+  border:2px solid #aaa;
+  border-radius:10px;
+  outline:none;
+  box-sizing:border-box;
+  transition:.3s;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+
+input:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+.parent_btn{
+  color: black;
+}
+#envoyés.parent_btn{
+  color: black;
+  font-size: large;
+
+}
