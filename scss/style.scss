@@ -1,3 +1,9 @@
+$color-bck:red;
+$color-bck2:orange;
+$color-btn:#e8505b;
+$color-b: brown;
+$hover-btn:#ffa50047;
+$hover-input:#666464;
 
 body{
     margin:0; 
@@ -6,6 +12,13 @@ body{
     font-size: 19px; 
     line-height: 30px; 
     min-height: 100%; 
+}
+
+a {text-decoration: none;}
+li {list-style: none;}
+
+input:focus, a:focus,button:focus{
+    outline: none;
 }
 
 @import "_formule";

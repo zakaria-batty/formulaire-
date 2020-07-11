@@ -28,7 +28,7 @@ function compute()
             return $sum1;
             break;
 
-        case 'Psychiatre Neuropsychiatre Neurologue secteur 1':
+        case 'Psychiatre secteur 1':
             $sum2 = $Psychiatre_1;
             if ($age > 18) :
                 $sum2++;
@@ -36,7 +36,7 @@ function compute()
             return $sum2;
             break;
 
-        case 'Psychiatre Neuropsychiatre Neurologue secteur 2':
+        case 'Psychiatre secteur 2':
             $sum3 = $Psychiatre_2;
             if ($age > 18) :
                 $sum3++;

@@ -6,37 +6,61 @@ body {
   line-height: 30px;
   min-height: 100%; }
 
-.content__formule {
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+input:focus, a:focus, button:focus {
+  outline: none; }
+
+.content .nav-content {
   text-align: center; }
-  .content__formule .errors {
+  .content .nav-content .errors {
     color: red; }
-  .content__formule .block {
-    width: 51%;
+  .content .nav-content .block {
+    width: 44%;
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    background: white;
+    background: #eeeeee;
     box-shadow: 0px 3px 7px #e0dede;
-    box-sizing: border-box; }
-    .content__formule .block__form {
-      padding: 49px 132px; }
-      .content__formule .block__form .parent {
+    box-sizing: border-box;
+    border-radius: 10px; }
+    .content .nav-content .block .formulaire {
+      padding: 26px 20px; }
+      .content .nav-content .block .formulaire .formule {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row; }
-        .content__formule .block__form .parent__children {
-          padding: 6px; }
-          .content__formule .block__form .parent__children__label {
+        flex-direction: row;
+        justify-content: center; }
+        .content .nav-content .block .formulaire .formule .les-input {
+          padding: 8px 19px; }
+          .content .nav-content .block .formulaire .formule .les-input .label {
             font-size: 17px;
-            font-family: cursive; }
-          .content__formule .block__form .parent__children__input {
+            font-family: cursive;
+            float: left; }
+          .content .nav-content .block .formulaire .formule .les-input .input {
             padding: 7px;
-            padding-left: 30px;
             border-radius: 9px;
-            border: 1px solid gray;
-            width: 108%;
+            border: 1px solid white;
+            width: 96%;
             font-size: 17px;
             font-family: monospace; }
+          .content .nav-content .block .formulaire .formule .les-input .input:hover {
+            border: 2px solid #666464; }
+      .content .nav-content .block .formulaire .btn {
+        width: 46%;
+        padding: 9px;
+        margin-top: 24px;
+        border: 1px solid orange;
+        border-radius: 9px;
+        background: linear-gradient(to right, #e8505b, orange);
+        font-size: 17px;
+        font-family: monospace; }
+      .content .nav-content .block .formulaire .btn:hover {
+        background: #ffa50047; }
 
 .affiche {
   position: relative;
@@ -52,31 +76,3 @@ body {
 
 .section {
   display: none; }
-form {
-  background-color: burlywood;
-}
-input{
-  width: 100%;
-  border:2px solid #aaa;
-  border-radius:10px;
-  outline:none;
-  box-sizing:border-box;
-  transition:.3s;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  -ms-border-radius:10px;
-  -o-border-radius:10px;
-}
-
-input:focus{
-  border-color:dodgerBlue;
-  box-shadow:0 0 8px 0 dodgerBlue;
-}
-.parent_btn{
-  color: black;
-}
-#envoyés.parent_btn{
-  color: black;
-  font-size: large;
-
-}

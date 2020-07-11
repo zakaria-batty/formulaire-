@@ -1,45 +1,62 @@
 
 .content{
-   &__formule{
-       text-align: center;
-       .errors{
-           color: red;
-       }
-       .block{
-           width: 51%;
-           display: flex;
-           justify-content: space-evenly;
-           margin: 0 auto;
-           background: white;
-           box-shadow: 0px 3px 7px #e0dede;
-           box-sizing: border-box;
-           &__form{
-               padding: 49px 132px ;
-               .parent{
-                   display: flex;
-                   flex-wrap: wrap;
-                   flex-direction: row;
-                   &__children{
-                       padding: 6px;
-                    &__label{
-                        font-size: 17px;
-                        font-family: cursive;
+    .nav-content{
+        text-align: center;
+        .errors{
+            color: red;
+        }
+        .block{
+            width: 44%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            background: #eeeeee;
+            box-shadow: 0px 3px 7px #e0dede;
+            box-sizing: border-box;
+            border-radius: 10px;
+                     .formulaire{
+                        padding: 26px 20px;
+                      .formule{
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+                            justify-content: center;
+                       .les-input{
+                            padding: 8px 19px;
+                        .label{
+                            font-size: 17px;
+                            font-family: cursive;
+                            float: left;
+                        }
+                        .input{
+                            padding: 7px;
+                            border-radius: 9px;
+                            border: 1px solid white;
+                            width: 96%;
+                            font-size: 17px;
+                            font-family: monospace;                       
+                        }
+                        .input:hover{border: 2px solid $hover-input}
                     }
-                    &__input{
-                        padding: 7px;
-                        padding-left: 30px;
-                        border-radius: 9px;
-                        border: 1px solid gray;
-                        width: 108%;
-                        font-size: 17px;
-                        font-family: monospace;
+                }
+                .btn{
+                    width: 46%;
+                    padding: 9px;
+                    margin-top: 24px;
+                    border: 1px solid $color-bck2;
+                    border-radius: 9px;
+                    background: linear-gradient(to right, $color-btn, $color-bck2);
+                    font-size: 17px;
+                    font-family: monospace;
                     }
-                   }
-               }
-           }
-       }
-   }
+                    .btn:hover {
+                        background: $hover-btn;
+                        }
+            }
+        }
+    }
 }
+
 .affiche{
  position: relative;
  bottom: 304px;
@@ -53,9 +70,6 @@
          box-shadow: 17px 8px 62px #e0dede;
         }
        }
-
-
-
 .section{
     display: none;
 }
