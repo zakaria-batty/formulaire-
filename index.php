@@ -95,7 +95,14 @@ include("./checkinfo/CheckFormule.php");
             </article>
             <div >
                 <h1>
-                    <?php if (!empty($Médecin)) : echo "Montant Remboursé " . compute() . " €";
+                    <?php if (!empty($Médecin)) : echo "Montant Remboursé " . $class -> Montant() . " €";
+                    endif;
+                    ?>
+                </h1>
+            </div>
+            <div >
+                <h1>
+                    <?php if (!empty($tarif )) : echo "total " . $class ->total() . " €";
                     endif;
                     ?>
                 </h1>

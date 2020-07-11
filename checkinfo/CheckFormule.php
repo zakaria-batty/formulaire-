@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Email = htmlentities($_POST['Email']);
     $Nombre_denfants = htmlentities($_POST['Nombre-denfants']);
     $regime = htmlentities($_POST['regime']);
-    $tarif_consultation = htmlentities($_POST['tarif-consultation']);
+    $tarif = htmlentities($_POST['tarif-consultation']);
     $Médecin = htmlentities($_POST['Médecin']);
     $Ville = htmlentities($_POST['Ville']);
     $Code_postal = htmlentities($_POST['Code-postal']);
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors = "*veuillez entrer le Nombre d'enfants";
     elseif (empty($regime)) :
         $errors = "*veuillez entrer régime";
-    elseif (empty($tarif_consultation)) :
+    elseif (empty($tarif)) :
         $errors = "*veuillez entrer le tarif consultation";
     elseif (empty($Médecin)) :
         $errors = "*veuillez entrer Médecin";
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (empty($date_effet_contrat)) :
         $errors = "*veuillez entrer le date d'effet contrat";
     else :
-        compute();
+        $class -> Montant();
 
     endif;
 }
