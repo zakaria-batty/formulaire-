@@ -1,7 +1,7 @@
 <?php
 include("./function/function.php");
 include("./checkinfo/CheckFormule.php");
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +38,6 @@ include("./checkinfo/CheckFormule.php");
                             <input class="input" type="text" name="Email" placeholder="Email*" value="<?php echo isset($_POST['Email']) ? $_POST['Email'] : ''; ?>">
                         </div>
 
-                        
                         <div class="les-input">
                             <select class="input" name="regime" id="regime" placeholder="Régime" style=" width: 217px;">
                                 <option value="">Régime</option>
@@ -48,7 +47,7 @@ include("./checkinfo/CheckFormule.php");
                                 <option value="Alsace - Moselle">Alsace - Moselle</option>
                             </select>
                         </div>
-                        
+
                         <div class="les-input">
                             <select class="input" name="Médecin" id="regime" placeholder="Régime" style=" width: 217px;">
                                 <option value="">Médecin consulté</option>
@@ -62,9 +61,9 @@ include("./checkinfo/CheckFormule.php");
                         </div>
 
                         <div class="les-input">
-                             <input class="input" type="number" name="Nombre-denfants" placeholder="Nombre d'enfants*" value="<?php echo isset($_POST['Nombre-denfants']) ? $_POST['Nombre-denfants'] : ''; ?>">
+                            <input class="input" type="number" name="Nombre-denfants" placeholder="Nombre d'enfants*" value="<?php echo isset($_POST['Nombre-denfants']) ? $_POST['Nombre-denfants'] : ''; ?>">
                         </div>
-                        
+
                         <div class="les-input">
                             <input class="input" type="number" name="tarif-consultation" placeholder="tarif consultation*" value="<?php echo isset($_POST['tarif-consultation']) ? $_POST['tarif-consultation'] : ''; ?>">
                         </div>
@@ -89,35 +88,40 @@ include("./checkinfo/CheckFormule.php");
 
                     </div>
                     <div class="button">
-                        <button class="btn" type="submit" name="comparer">Je compare</button>
+                        <button id="btn" class="btn" type="submit" name="comparer">Je compare</button>
                     </div>
                 </form>
             </article>
-            <div >
-                <h1>
-                    <?php if (!empty($Médecin)) : echo "Montant Remboursé " . $class -> Montant() . " €";
-                    endif;
-                    ?>
-                </h1>
-            </div>
-            <div >
-                <h1>
-                    <?php if (!empty($tarif )) : echo "total " . $class ->total() . " €";
-                    endif;
-                    ?>
-                </h1>
-            </div>
-        </div>
     </section>
-    <!-- <article class="affiche">
-        <div class="div">
-            <h1>
-                
-            </h1>
+    <article class="box affiche">
+        <div class="content">
+            <span class="box-close">X</span>
+            <table class="table">
+                <tr>
+                    <th class="th">Montant Remboursé</th>
+                    <th class="th">Total</th>
+                </tr>
+                <tr>
+                    <td class="td"><?php if (!empty($Médecin)) : echo $class->Montant(18) . " €";
+                        endif; ?></td>
+                    <td class="td"><?php if (!empty($tarif)) : echo $class->total() . " €";
+                        endif; ?></td>
+                </tr>
+            </table>
         </div>
-    </article> -->
+    </article>
 
-    <!-- <script src="js/script.js"></script> -->
+    <!-- if (!empty($Médecin)) : echo "<article class='box'>" .
+        "<div class='content'>" .
+        " <span class='box-close'>" . "X" . "</span>" .
+        "<h1>" ."total " . $class->Montant() . " €". "</h1>" .
+        "<h1>" ."total " . $class->total() . " €". "</h1>" .
+        "</div>" .
+        "</article>";
+    endif; -->
+
+    <script src="js/jquery-3.5.1.min (1).js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -57,19 +57,38 @@
     }
 }
 
-.affiche{
+.box{
  position: relative;
- bottom: 304px;
-    .div{
+ bottom: 325px;
+    .content{
          width: 26%;
-         background: white;
+         background: #eeeeee;
          margin: 0 auto;
          font-size: 17px;
          height: 117px;
          padding: 16px;
-         box-shadow: 17px 8px 62px #e0dede;
+         box-shadow: 0px 8px 38px grey;
+        .box-close{
+            float: right;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-family: sans-serif;
+            background: red;
+            margin: -16px -16px;
+            .table{
+                margin: 17px auto;
+                text-align: center;
+                .th{
+                    padding: 10px 24px;
+                    background: white;
+                }
+                .td{
+                    background: white;
+                }
+            }
+        }
         }
        }
-.section{
-    display: none;
-}
+

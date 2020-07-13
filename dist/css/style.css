@@ -62,17 +62,31 @@ input:focus, a:focus, button:focus {
       .content .nav-content .block .formulaire .btn:hover {
         background: #ffa50047; }
 
-.affiche {
+.box {
   position: relative;
-  bottom: 304px; }
-  .affiche .div {
+  bottom: 325px; }
+  .box .content {
     width: 26%;
-    background: white;
+    background: #eeeeee;
     margin: 0 auto;
     font-size: 17px;
     height: 117px;
     padding: 16px;
-    box-shadow: 17px 8px 62px #e0dede; }
-
-.section {
-  display: none; }
+    box-shadow: 0px 8px 38px grey; }
+    .box .content .box-close {
+      float: right;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-family: sans-serif;
+      background: red;
+      margin: -16px -16px; }
+      .box .content .box-close .table {
+        margin: 17px auto;
+        text-align: center; }
+        .box .content .box-close .table .th {
+          padding: 10px 24px;
+          background: white; }
+        .box .content .box-close .table .td {
+          background: white; }

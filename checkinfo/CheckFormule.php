@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $date_effet_contrat = htmlentities($_POST['date-effet-contrat']);
 
     // check if the portlet is empty
-    
+
     if (empty($Nom)) :
         $errors = '*veuillez entrer Nom';
     elseif (empty($Prénom)) :
@@ -48,7 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (empty($date_effet_contrat)) :
         $errors = "*veuillez entrer le date d'effet contrat";
     else :
-        $class -> Montant();
-
+        $class;
     endif;
 }
