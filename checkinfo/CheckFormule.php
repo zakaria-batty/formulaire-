@@ -1,21 +1,21 @@
 <?php
+include("./function/function.php");
 
-
-$errors = [];
+$errors = 0;
 // check if user coming from a request
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     //assign variables
 
     $Nom = htmlentities($_POST['Nom']);
-    $Prénom = htmlentities($_POST['Prénom']);
-    $Téléphone = htmlentities($_POST['Téléphone']);
+    $Prenom = htmlentities($_POST['Prenom']);
+    $Telephone = htmlentities($_POST['Telephone']);
     $Email = htmlentities($_POST['Email']);
     $Nombre_denfants = htmlentities($_POST['Nombre-denfants']);
     $regime = htmlentities($_POST['regime']);
     $tarif = htmlentities($_POST['tarif-consultation']);
-    $Médecin = htmlentities($_POST['Médecin']);
+    $Medecin = htmlentities($_POST['Medecin']);
     $Ville = htmlentities($_POST['Ville']);
     $Code_postal = htmlentities($_POST['Code-postal']);
     $date_naissance = htmlentities($_POST['date-naissance']);
@@ -48,6 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (empty($date_effet_contrat)) :
         $errors = "*veuillez entrer le date d'effet contrat";
     else :
-        $class;
+        Montant();
     endif;
-}
+// }
