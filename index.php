@@ -110,16 +110,6 @@ include("./checkinfo/CheckFormule.php");
             </table>
         </div>
     </article>
-
-    <!-- if (!empty($Médecin)) : echo "<article class='box'>" .
-        "<div class='content'>" .
-        " <span class='box-close'>" . "X" . "</span>" .
-        "<h1>" ."total " . $class->Montant() . " €". "</h1>" .
-        "<h1>" ."total " . $class->total() . " €". "</h1>" .
-        "</div>" .
-        "</article>";
-    endif; -->
-
     <script src="js/jquery-3.5.1.min (1).js"></script>
     <script src="js/script.js"></script>
 </body>
