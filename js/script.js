@@ -1,17 +1,38 @@
+const activities = document.getElementById('sect-choices');
+const SelectFm = document.getElementById("sect-femmes");
+const nmbr1 = document.getElementById("nmbr1");
+const nmbr2 = document.getElementById("nmbr2");
+const women = document.getElementById("women");
 
-$(document).ready(function () {
+activities.addEventListener("change", function () {
 
-    // show results section    
-    // $("#btn").on('click', function (e) {
-    //     $('.box').show();
-    //     e.preventDefault();
-    // });
+    if (activities.value == "Madame") {
+        SelectFm.style.display = 'block';
 
-    // hide results section 
-    $(".box-close").click(function () {
-        $(this).parents(".box").fadeOut(1000);
-    });
+    } 
+
 });
+
+women.addEventListener("change", function () {
+
+    if (women.value == "enciente") {
+        nmbr1.style.display = 'block';
+    }else{
+        nmbr2.style.display = 'block';
+        nmbr1.style.display = 'none';
+    }
+});
+
+// women.addEventListener("change", function () {
+
+//     if (women.value == "accouchement") {
+      
+
+//     }
+// });
+
+
+
 
 
 

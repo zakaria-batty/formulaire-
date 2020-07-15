@@ -62,31 +62,49 @@ input:focus, a:focus, button:focus {
       .content .nav-content .block .formulaire .btn:hover {
         background: #ffa50047; }
 
-.box {
-  position: relative;
-  bottom: 325px; }
-  .box .content {
-    width: 26%;
-    background: #eeeeee;
-    margin: 0 auto;
-    font-size: 17px;
-    height: 117px;
-    padding: 16px;
-    box-shadow: 0px 8px 38px grey; }
-    .box .content .box-close {
-      float: right;
-      text-align: center;
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      font-family: sans-serif;
-      background: red;
-      margin: -16px -16px; }
-      .box .content .box-close .table {
-        margin: 17px auto;
-        text-align: center; }
-        .box .content .box-close .table .th {
-          padding: 10px 24px;
-          background: white; }
-        .box .content .box-close .table .td {
-          background: white; }
+.sect-choices {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+  .sect-choices .les-input {
+    padding: 8px 19px; }
+    .sect-choices .les-input .label {
+      font-size: 17px;
+      font-family: cursive;
+      float: left; }
+    .sect-choices .les-input .input {
+      padding: 7px;
+      border-radius: 9px;
+      border: 1px solid white;
+      width: 96%;
+      font-size: 17px;
+      font-family: monospace; }
+    .sect-choices .les-input .input:hover {
+      border: 2px solid #666464; }
+
+.box .content {
+  width: 39%;
+  background: #eeeeee;
+  margin: 0 auto;
+  font-size: 17px;
+  height: 117px;
+  padding: 16px; }
+  .box .content .box-close {
+    float: right;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-family: sans-serif;
+    background: red;
+    margin: -16px -16px; }
+    .box .content .box-close .table {
+      margin: 17px auto;
+      text-align: center; }
+      .box .content .box-close .table .th {
+        padding: 10px 24px;
+        background: white; }
+      .box .content .box-close .table .td {
+        padding: 10px 24px;
+        background: white; }

@@ -56,18 +56,39 @@
         }
     }
 }
+.sect-choices{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    .les-input{
+            padding: 8px 19px;
+        .label{
+            font-size: 17px;
+            font-family: cursive;
+            float: left;
+        }
+        .input{
+            padding: 7px;
+            border-radius: 9px;
+            border: 1px solid white;
+            width: 96%;
+            font-size: 17px;
+            font-family: monospace;                       
+        }
+        .input:hover{border: 2px solid $hover-input}
+    }
+}
 
 .box{
- position: relative;
- bottom: 325px;
     .content{
-         width: 26%;
+         width: 39%;
          background: #eeeeee;
          margin: 0 auto;
          font-size: 17px;
          height: 117px;
          padding: 16px;
-         box-shadow: 0px 8px 38px grey;
+        //  box-shadow: 0px 8px 38px grey;
         .box-close{
             float: right;
             text-align: center;
@@ -85,10 +106,11 @@
                     background: white;
                 }
                 .td{
+                    padding: 10px 24px;
                     background: white;
                 }
             }
         }
-        }
-       }
+    } 
+}
 
