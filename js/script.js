@@ -29,6 +29,9 @@ function Evnt(X) {
         Medecin_A.style.display = 'none';
         Medecin_C.style.display = 'none';
         Medecin_II.style.display = 'none';
+        sect_femmes.style.display = 'none';
+        Nmbr_mois.style.display = 'none';
+        Nmbr_Jours.style.display = 'none';
     } else if (X == 'Medecin-C') {
 
         tarif.style.display = 'block';
@@ -36,6 +39,9 @@ function Evnt(X) {
         Medecin_A.style.display = 'none';
         Medecin_B.style.display = 'none';
         Medecin_II.style.display = 'none';
+        sect_femmes.style.display = 'none';
+        Nmbr_mois.style.display = 'none';
+        Nmbr_Jours.style.display = 'none';
     } else if (X == 'Medecin-II') {
 
         tarif.style.display = 'block';
@@ -43,6 +49,9 @@ function Evnt(X) {
         Medecin_A.style.display = 'none';
         Medecin_B.style.display = 'none';
         Medecin_C.style.display = 'none';
+        sect_femmes.style.display = 'none';
+        Nmbr_mois.style.display = 'none';
+        Nmbr_Jours.style.display = 'none';
     } else if (X == 'Mlle' || X == 'Mme') {
 
         sect_femmes.style.display = 'block';
@@ -51,11 +60,12 @@ function Evnt(X) {
     } else if (X == 'enceinte') {
 
         Nmbr_mois.style.display = 'block';
-        sect_femmes.style.display = 'none';
+        sect_femmes.style.display = 'block';
+        Nmbr_Jours.style.display = 'none';
     } else if (X == 'pasenceinte') {
-
+        Nmbr_mois.style.display = 'none';
         Nmbr_Jours.style.display = 'block';
-        sect_femmes.style.display = 'none';
+        sect_femmes.style.display = 'block';
     } else {
     }
     return

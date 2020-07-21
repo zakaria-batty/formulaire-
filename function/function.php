@@ -10,17 +10,17 @@ function condition()
     $age = $diff->format('%y');
 
     $N_grosses = $_POST['N-grosses'];
-    $accouche = $_POST['accouche'];
+    $accouche = isset($_POST['accouche']) ? $_POST['accouche'] : NULL;
 
-    if (isset($_POST["Medecin-A"])) :
+    if ($_POST["Medecin-A"]) :
         if ($age >= 18 || $N_grosses >= 6 || $accouche == "Oui") :
             $sum--;
         endif;
-    elseif (isset($_POST["Medecin-B"])) :
+    elseif ($_POST["Medecin-B"]) :
         $sum--;
-    elseif (isset($_POST["Medecin-C"])) :
+    elseif ($_POST["Medecin-C"]) :
         $sum--;
-    elseif (isset($_POST["Medecin-II"])) :
+    elseif ($_POST["Medecin-II"]) :
         $sum--;
     endif;
 }

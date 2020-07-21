@@ -65,31 +65,32 @@
         }
     }
     .radio{
-        font-size: 24px;
+        font-size: 15px;
+        font-family: arial;
         font-weight: 500;
         text-transform: capitalize;
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        padding-left: 30px;
+        padding-left: 26px;
         cursor: pointer;
         input[type="radio"]{
             display:none;
         }
         span{
-            height: 20px;
-            width: 20px;
+            height: 14px;
+            width: 14px;
             border-radius: 50%;
-            border: 3px solid $color-bck2;
+            border: 3px solid orange;
             display: block;
             position: absolute;
-            top: 7px;
+            top: 5px;
             left: 0px;
         }
         span:after{
             content: "";
-            height: 8px;
-            width: 8px;
+            height: 6px;
+            width: 6px;
             background: $color-bck2;
             display: block;
             position: absolute;
@@ -103,14 +104,18 @@
             transform: translate(-50%, -50%) scale(1.5);
         }
     }
-    .radio + .radio{
-        margin-left: 20px;
-    }
+    // .radio + .radio{
+    //     margin-left: 20px;
+    // }
 
 
 }
 
-
+.consultation{
+    padding-bottom: 15px;
+    // border-bottom: 2px solid gray;
+    // border-radius: 20px;
+}
 
 
 .box{
@@ -121,28 +126,18 @@
          font-size: 17px;
          height: 117px;
          padding: 16px;
-        // .box-close{
-        //     float: right;
-        //     text-align: center;
-        //     width: 25px;
-        //     height: 25px;
-        //     line-height: 25px;
-        //     font-family: sans-serif;
-        //     background: red;
-        //     margin: -16px -16px;
             .table{
-                margin: 17px auto;
+                margin: -7px -230px;
                 text-align: center;
                 .th{
-                    padding: 10px 24px;
+                    padding: 10px 101px;
                     background: white;
                 }
                 .td{
-                    padding: 10px 24px;
+                    padding: 10px 101px;
                     background: white;
                 }
             }
-        // }
     } 
 }
 

@@ -40,31 +40,6 @@
                         <!-- section-question -->
                         <div class="sect-choices">
                             <div class="questions">
-                                <div style=" text-align: justify;">
-                                    <label class="radio" style="font-size: unset; padding-bottom: 10px;">
-                                        <input onclick="Evnt('Medecin-A')" type="radio" name="MD" value="Mr">
-                                        Vous consultez votre médecin traitant ou son remplaçant ou un autre médecin en cas
-                                        d'urgence ou hors résidence
-                                        <span></span>
-                                    </label>
-                                    <label class="radio" style="font-size: unset; padding-bottom: 10px;">
-                                        <input onclick="Evnt('Medecin-B')" type="radio" name="MD" value="Mr">
-                                        Vous consultez un médecin correspondant spécialiste dans le cadre d'un "suivi
-                                        régulier"
-                                        <span></span>
-                                    </label>
-                                    <label class="radio" style="font-size: unset; padding-bottom: 10px;">
-                                        <input onclick="Evnt('Medecin-C')" type="radio" name="MD" value="Mr">
-                                        vous consultez un médcin correspondant spécialiste pour un "avis" ponctuel
-                                        <span></span>
-                                    </label>
-                                    <label class="radio" style="font-size: unset;">
-                                        <input onclick="Evnt('Medecin-II')" type="radio" name="MD" value="Mr">
-                                        Hors du parcours de soins (vous n'avez pas déclaré de medecin traitant et/ou vous
-                                        consultez directement un spécialiste sans étre orienté par votre médecin traitant)
-                                        <span></span>
-                                    </label>
-                                </div>
                                 <div id="sect-choices">
                                     <p class="form__question"> Civilité</p>
                                     <div class="radio-group" style="padding-bottom: 20px;">
@@ -103,55 +78,6 @@
                             <div class="les-input">
                                 <input class="input" type="text" name="Email" placeholder="Email*" required>
                             </div>
-                            <div class="les-input" id="Medecin-A" style="display: none;">
-                                <select class="input" name="Medecin-A" id="" placeholder="" style=" width: 217px;">
-                                    <option value="">Médecin consulté</option>
-                                    <option value="Généraliste secteur 1">Généraliste secteur 1</option>
-                                    <option value="Généraliste secteur 2">Généraliste secteur 2</option>
-                                    <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
-                                    <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                    <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
-                                    <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
-                                </select>
-                            </div>
-                            <div class="les-input" id="Medecin-B" style="display: none;">
-                                <select class="input" name="Medecin-B" id="" placeholder="" style=" width: 217px;">
-                                    <option value="">Médecin consulté</option>
-                                    <option value="Généraliste secteur 1">Généraliste secteur 1</option>
-                                    <option value="Généraliste secteur 2">Généraliste secteur 2</option>
-                                    <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
-                                    <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                    <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
-                                    <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
-                                    <option value="Cardioloque secteur 1">Cardioloque secteur 1</option>
-                                    <option value="Cardioloque secteur 2">Cardioloque secteur 2</option>
-                                </select>
-                            </div>
-                            <div class="les-input" id="Medecin-C" style="display: none;">
-                                <select class="input" name="Medecin-C" id="" placeholder="" style=" width: 217px;">
-                                    <option value="">Médecin consulté</option>
-                                    <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
-                                    <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                    <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
-                                    <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
-                                </select>
-                            </div>
-                            <div class="les-input" id="Medecin-II" style="display: none;">
-                                <select class="input" name="Medecin-II" id="" placeholder="" style=" width: 217px;">
-                                    <option value="">Médecin consulté</option>
-                                    <option value="Généraliste secteur 1">Généraliste secteur 1</option>
-                                    <option value="Généraliste secteur 2">Généraliste secteur 2</option>
-                                    <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
-                                    <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
-                                    <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
-                                    <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
-                                    <option value="Cardioloque secteur 1">Cardioloque secteur 1</option>
-                                    <option value="Cardioloque secteur 2">Cardioloque secteur 2</option>
-                                </select>
-                            </div>
-                            <div class="les-input" id="tarif" style="display: none;">
-                                <input class="input" type="number" name="tarif-consultation" placeholder="tarif consultation*" required>
-                            </div>
                             <div class="les-input">
                                 <label class="label" for="date_début">Date de naissance*</label><br>
                                 <input class="input" type="date" name="date-naissance" style=" width: 204px; height: 19px;" required>
@@ -160,6 +86,87 @@
                         <!--  section-question -->
                         <div class="sect-choices">
                             <div class="questions">
+                                <p class="form__question">Choisissez votre type de consultation </p>
+                                <div>
+                                    <div style=" text-align: justify;">
+                                        <label class="radio consultation">
+                                            <input onclick="Evnt('Medecin-A')" type="radio" name="MD" value="Mr">
+                                            Vous consultez votre médecin traitant ou son remplaçant ou un autre médecin en cas
+                                            d'urgence ou hors résidence
+                                            <span></span>
+                                        </label>
+                                        <label class="radio consultation">
+                                            <input onclick="Evnt('Medecin-B')" type="radio" name="MD" value="Mr">
+                                            Vous consultez un médecin correspondant spécialiste dans le cadre d'un "suivi
+                                            régulier"
+                                            <span></span>
+                                        </label>
+                                        <label class="radio consultation">
+                                            <input onclick="Evnt('Medecin-C')" type="radio" name="MD" value="Mr">
+                                            vous consultez un médcin correspondant spécialiste pour un "avis" ponctuel
+                                            <span></span>
+                                        </label>
+                                        <label class="radio consultation">
+                                            <input onclick="Evnt('Medecin-II')" type="radio" name="MD" value="Mr">
+                                            Hors du parcours de soins (vous n'avez pas déclaré de medecin traitant et/ou vous
+                                            consultez directement un spécialiste sans étre orienté par votre médecin traitant)
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="formule">
+                                    <div class="les-input" id="Medecin-A" style="display: none;">
+                                        <select class="input" name="Medecin-A" id="" placeholder="" style=" width: 217px;">
+                                            <option value="">Médecin consulté</option>
+                                            <option value="Généraliste secteur 1">Généraliste secteur 1</option>
+                                            <option value="Généraliste secteur 2">Généraliste secteur 2</option>
+                                            <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
+                                            <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
+                                            <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
+                                            <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="les-input" id="Medecin-B" style="display: none;">
+                                        <select class="input" name="Medecin-B" id="" placeholder="" style=" width: 217px;">
+                                            <option value="">Médecin consulté</option>
+                                            <option value="Généraliste secteur 1">Généraliste secteur 1</option>
+                                            <option value="Généraliste secteur 2">Généraliste secteur 2</option>
+                                            <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
+                                            <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
+                                            <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
+                                            <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
+                                            <option value="Cardioloque secteur 1">Cardioloque secteur 1</option>
+                                            <option value="Cardioloque secteur 2">Cardioloque secteur 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="les-input" id="Medecin-C" style="display: none;">
+                                        <select class="input" name="Medecin-C" id="" placeholder="" style=" width: 217px;">
+                                            <option value="">Médecin consulté</option>
+                                            <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
+                                            <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
+                                            <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
+                                            <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="les-input" id="Medecin-II" style="display: none;">
+                                        <select class="input" name="Medecin-II" id="" placeholder="" style=" width: 217px;">
+                                            <option value="">Médecin consulté</option>
+                                            <option value="Généraliste secteur 1">Généraliste secteur 1</option>
+                                            <option value="Généraliste secteur 2">Généraliste secteur 2</option>
+                                            <option value="Spécialiste secteur 1">Spécialiste secteur 1</option>
+                                            <option value="Spécialiste secteur 2">Spécialiste secteur 2</option>
+                                            <option value="Psychiatre secteur 1">Psychiatre secteur 1</option>
+                                            <option value="Psychiatre secteur 2">Psychiatre secteur 2</option>
+                                            <option value="Cardioloque secteur 1">Cardioloque secteur 1</option>
+                                            <option value="Cardioloque secteur 2">Cardioloque secteur 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="les-input" id="tarif" style="display: none;">
+                                        <input class="input" type="number" name="tarif-consultation" placeholder="tarif consultation*" required>
+                                    </div>
+                                </div>
+
                                 <div id="sect-femmes" style="display: none;">
                                     <p class="form__question">Êtes-vous enceinte</p>
                                     <div class="radio-group">
