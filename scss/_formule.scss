@@ -2,9 +2,6 @@
 .content{
     .nav-content{
         text-align: center;
-        .errors{
-            color: red;
-        }
         .block{
             width: 44%;
             display: flex;
@@ -20,7 +17,7 @@
                             display: flex;
                             flex-wrap: wrap;
                             flex-direction: row;
-                            justify-content: center;
+                            // justify-content: center;
                        .les-input{
                             padding: 8px 19px;
                         .label{
@@ -61,24 +58,60 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    .les-input{
-            padding: 8px 19px;
-        .label{
-            font-size: 17px;
-            font-family: cursive;
-            float: left;
+    .questions {
+        p {
+            font-weight: 700;
+            color: #7F7F7F;
         }
-        .input{
-            padding: 7px;
-            border-radius: 9px;
-            border: 1px solid white;
-            width: 96%;
-            font-size: 17px;
-            font-family: monospace;                       
-        }
-        .input:hover{border: 2px solid $hover-input}
     }
+    .radio{
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        input[type="radio"]{
+            display:none;
+        }
+        span{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 3px solid $color-bck2;
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 0px;
+        }
+        span:after{
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: $color-bck2;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition:  300ms ease-in-out 0s;
+        }
+        input[type="radio"]:checked ~ span:after{
+            transform: translate(-50%, -50%) scale(1.5);
+        }
+    }
+    .radio + .radio{
+        margin-left: 20px;
+    }
+
+
 }
+
+
+
 
 .box{
     .content{
@@ -88,16 +121,15 @@
          font-size: 17px;
          height: 117px;
          padding: 16px;
-        //  box-shadow: 0px 8px 38px grey;
-        .box-close{
-            float: right;
-            text-align: center;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            font-family: sans-serif;
-            background: red;
-            margin: -16px -16px;
+        // .box-close{
+        //     float: right;
+        //     text-align: center;
+        //     width: 25px;
+        //     height: 25px;
+        //     line-height: 25px;
+        //     font-family: sans-serif;
+        //     background: red;
+        //     margin: -16px -16px;
             .table{
                 margin: 17px auto;
                 text-align: center;
@@ -110,7 +142,9 @@
                     background: white;
                 }
             }
-        }
+        // }
     } 
 }
 
+
+  
