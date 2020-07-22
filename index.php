@@ -38,6 +38,7 @@
                     <!-- formulaire -->
                     <form class="formulaire" action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
                         <!-- section-question -->
+                        <!-- <h3 class="title">Rapide, gratuit et sans engagement !</h3> -->
                         <div class="sect-choices">
                             <div class="questions">
                                 <div id="sect-choices">
@@ -64,7 +65,7 @@
 
                         </div>
 
-                        <!-- Section les inputs type number -->
+                        <!-- Section formule -->
                         <div class="formule">
                             <div class="les-input">
                                 <input class="input" type="text" name="Nom" placeholder="Nom*" required>
@@ -186,7 +187,7 @@
                                 <div id="Nmbr-mois" style="display: none;">
                                     <p class="form__question">Nombre de mois de grosses</p>
                                     <div class="les-input">
-                                        <input class="input-number" type="number" name="N-grosses" id="Oui" value="Oui" placeholder="Nomber de mois">
+                                        <input class="input-number" type="number" name="N-grosses" id="Oui" value="Oui" placeholder="Nombre de mois de grosses">
                                     </div>
                                 </div>
                                 <div id="Nmbr-jours" style="display: none;">
@@ -207,7 +208,7 @@
                             </div>
                         </div>
                         <div class="button">
-                            <button class="btn" type="submit" name="comparer">Je compare</button>
+                            <button class="btn" type="submit" name="comparer">Calculer le montant de remboursement</button>
                         </div>
                     </form>
                 <?php } ?>

@@ -31,13 +31,18 @@ function Montant()
     global $sum;
     // variables
     $MontantRembourse_II = 23 * 70 / 100;
+    $MontantRembourse_I30 = 23 * 30 / 100;
     $MontantRembourse_A = 25 * 70 / 100;
+    $MontantRembourse_30 = 25 * 30 / 100;
     $MontantRembourse_D = 30 * 70 / 100;
     $MontantRembourse_C = 39.00 * 70 / 100;
+    $MontantRembourse_C30 = 39.00 * 30 / 100;
     $MontantRembourse_B = 41.70 * 70 / 100;
+    $MontantRembourse_B30 = 41.70 * 30 / 100;
     $MontantRembourse_III = 46.70 * 70 / 100;
     $MontantRembourse = 46.00 * 70 / 100;
     $MontantRembourse_E = 47.73 * 70 / 100;
+    $MontantRembourse_E30 = 47.73 * 30 / 100;
     $MontantRembourse_IV = 51 * 70 / 100;
     $MontantRembourse_1 = 57.50 * 70 / 100;
 
@@ -103,21 +108,21 @@ function Montant()
     switch ($_POST['Medecin-II']) {
         case 'Généraliste secteur 1':
         case 'Spécialiste secteur 1':
-            $sum = $MontantRembourse_A;
+            $sum = $MontantRembourse_30;
             break;
         case 'Généraliste secteur 2':
         case 'Spécialiste secteur 2':
-            $sum = $MontantRembourse_II;
+            $sum = $MontantRembourse_I30;
             break;
         case 'Psychiatre secteur 1':
-            $sum = $MontantRembourse_B;
+            $sum = $$MontantRembourse_B30;
             break;
         case 'Psychiatre secteur 2':
-            $sum = $MontantRembourse_C;
+            $sum = $MontantRembourse_C30;
             break;
         case 'Cardioloque secteur 2':
         case 'Cardioloque secteur 2':
-            $sum = $MontantRembourse_E;
+            $sum = $MontantRembourse_E30;
             break;
 
         default:
