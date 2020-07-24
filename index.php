@@ -199,7 +199,7 @@
                                             <span></span>
                                         </label>
                                         <label class="radio">
-                                            <input type="radio" name="accouche" id="Non" value="Non">
+                                            <input type="radio" name="accouche" id="Non" value="Non" pattern="">
                                             Non
                                             <span></span>
                                         </label>

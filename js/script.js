@@ -7,20 +7,38 @@ const Medecin_A = document.getElementById("Medecin-A");
 const Medecin_B = document.getElementById("Medecin-B");
 const Medecin_C = document.getElementById("Medecin-C");
 const Medecin_II = document.getElementById("Medecin-II");
+const Mlle = document.getElementById("Mlle");
+const Mme = document.getElementById("Mme");
 
-function Evnt(X) {
 
-    if (X == 'Medecin-A') {
 
+function recuperation() {
+
+    if (Mlle.checked == true || Mme.checked == true) {
         tarif.style.display = 'block';
         Medecin_A.style.display = 'block';
         Medecin_B.style.display = 'none';
         Medecin_C.style.display = 'none';
         Medecin_II.style.display = 'none';
         sect_femmes.style.display = 'block';
-        sect_femmes.style.display = 'block';
         Nmbr_Jours.style.display = 'none';
         Nmbr_mois.style.display = 'none';
+    } else {
+        tarif.style.display = 'block';
+        Medecin_A.style.display = 'block';
+        Medecin_B.style.display = 'none';
+        Medecin_C.style.display = 'none';
+        Medecin_II.style.display = 'none';
+        sect_femmes.style.display = 'none';
+        Nmbr_Jours.style.display = 'none';
+        Nmbr_mois.style.display = 'none';
+    }
+}
+
+
+function Evnt(X) {
+    if (X == 'Medecin-A') {
+        recuperation();
     } else if (X == 'Medecin-B') {
 
         tarif.style.display = 'block';
@@ -73,3 +91,4 @@ function Evnt(X) {
     }
     return
 }
+
